@@ -1,0 +1,454 @@
+/* Estilos Globales y Reseteo */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* Opcional: Establecer una fuente */
+    font-family: Arial, sans-serif; 
+    overflow: hidden; /* Evita barras de desplazamiento */
+}
+
+/* ----------------------------------- */
+/* CONTENEDOR PRINCIPAL */
+/* ----------------------------------- */
+.welcome-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------------------- */
+/* CARRUSEL DE PANTALLA COMPLETA */
+/* ----------------------------------- */
+.carousel-full-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Oculta las imágenes fuera de la vista */
+    z-index: 1; /* Asegura que esté detrás del contenido */
+}
+
+.carousel-track {
+    display: flex;
+    height: 100%;
+    /* La animación se aplicará con JavaScript */
+}
+
+.carousel-slide {
+    min-width: 100%; /* Cada slide ocupa el 100% del ancho */
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra toda la pantalla */
+    filter: brightness(60%); /* Oscurece las imágenes para que el logo resalte */
+    transition: opacity 1s ease-in-out; /* Transición para un efecto más suave si usas JS */
+}
+
+/* ----------------------------------- */
+/* CONTENIDO SUPERPUESTO (OVERLAY) */
+/* ----------------------------------- */
+.content-overlay {
+    position: relative;
+    z-index: 10; /* Asegura que el contenido esté por encima del carrusel */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%; /* Ancho para el contenido */
+    max-width: 600px;
+}
+
+/* ----------------------------------- */
+/* LOGO */
+/* ----------------------------------- */
+.logo-container {
+    margin-bottom: 40px;
+}
+
+.bakery-logo {
+    width: 100%;
+    max-width: 300px; /* Ajusta el tamaño del logo */
+    height: auto;
+    /* Usar `drop-shadow` puede ayudar a que el logo PNG resalte */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4)); 
+}
+
+/* ----------------------------------- */
+/* BOTÓN DE LA TIENDA */
+/* ----------------------------------- */
+.store-button {
+    text-decoration: none; /* Quitar el subrayado del enlace */
+    background: linear-gradient(145deg, #a06e3e, #7a532d); /* Degradado estilo pan/caramelo */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+}
+
+.store-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ----------------------------------- */
+/* TEXTO INFORMATIVO OPCIONAL */
+/* ----------------------------------- */
+.info-text {
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); /* Ayuda a la lectura sobre el fondo */
+}
+/* =================================== */
+/* ESTILOS DE BARRA SUPERIOR (HEADER) */
+/* =================================== */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #f8f8f8; /* Color de fondo claro */
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-family: 'Poppins', sans-serif;
+    position: sticky; /* Se queda fijo al hacer scroll */
+    top: 0;
+    z-index: 100;
+}
+
+.top-bar-left, .top-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #a06e3e; /* Color del logo de la panadería */
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.location-text, .social-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-right: 15px;
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.nav-icon:hover {
+    color: #a06e3e;
+}
+
+/* =================================== */
+/* ESTILOS DE BANNER DE OFERTAS */
+/* =================================== */
+.promo-banner {
+    background-color: #f7e0c4; /* Tono suave de pan */
+    color: #7a532d;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =================================== */
+/* ESTILOS DE MENÚ Y GRILLA */
+/* =================================== */
+.menu-container {
+    padding: 40px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.products-grid {
+    display: grid;
+    /* Diseño responsivo: 3 columnas por defecto, cambia a 2 en pantallas pequeñas */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+}
+
+/* ----------------------------------- */
+/* TARJETA DE PRODUCTO (Card) */
+/* ----------------------------------- */
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #eee; /* Placeholder hasta tener imágenes reales */
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0 5px 0;
+}
+
+.product-price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #a06e3e; /* Color de énfasis */
+    margin-bottom: 15px;
+}
+
+.add-to-cart-btn {
+    background-color: #7a532d;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #5d4024;
+}
+
+/* =================================== */
+/* FILTROS DE CATEGORÍA */
+/* =================================== */
+.category-filters {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: #a06e3e;
+    color: white;
+    border-color: #a06e3e;
+}
+/* =================================== */
+/* ESTILOS DE CARRITO */
+/* =================================== */
+.carrito-container {
+    padding: 40px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carrito-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.carrito-layout {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr; /* Columna de productos y columna de formulario */
+    gap: 40px;
+}
+
+/* ANTERIOR: .carrito-layout { grid-template-columns: 2fr 1.5fr; ... } */
+
+/* NUEVO: Hacer la columna del formulario más estrecha */
+.carrito-layout {
+    display: grid;
+    /* 2.5fr para los productos y 1fr para el resumen */
+    grid-template-columns: 2.5fr 1fr; 
+    gap: 40px;
+}
+
+/* Opcional: Asegurar que el resumen tenga suficiente espacio en la columna derecha */
+.checkout-form {
+    padding: 20px; /* Reducir padding si es necesario */
+}
+
+/* Si la quieres aún más estrecha, usa porcentajes o pixeles fijos */
+/* grid-template-columns: minmax(400px, 1fr) 300px; */
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.item-details span {
+    font-weight: 600;
+}
+
+.item-name {
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+.item-price {
+    min-width: 80px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.item-controls {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.item-controls input {
+    width: 40px;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.item-controls button {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px 8px;
+    font-weight: bold;
+}
+
+.remove-btn {
+    color: #d9534f;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* --- Resumen y Totales --- */
+.cart-summary {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #a06e3e;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
+
+.total-line {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #a06e3e;
+    padding-top: 10px;
+}
+
+/* --- Formulario de Pago --- */
+.checkout-form {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.checkout-form h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+.btn-checkout {
+    width: 100%;
+    background-color: #a06e3e;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-checkout:hover {
+    background-color: #7a532d;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .carrito-layout {
+        grid-template-columns: 1fr; /* Una sola columna en móvil */
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Don Fermín</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="top-bar-left">
+            <a href="index.html" class="logo-link">DF</a>
+            <span class="location-text">📍 UBICACIÓN: [LOCALIDAD]</span>
+            <span class="social-text">📸 RED SOCIAL: [@INSTAGRAM]</span>
+        </div>
+        <nav class="top-bar-right">
+            <a href="index.html" class="nav-icon home-icon" title="Volver al Menú">🏠</a>
+            <a href="carrito.html" class="nav-icon cart-icon active" title="Ver Carrito">
+                🛒 <span id="cart-count" class="cart-badge">0</span>
+            </a>
+            <a href="#" class="nav-icon user-icon" title="Mi Cuenta">👤</a>
+        </nav>
+    </header>
+
+    <main class="carrito-container">
+        <h1>Tu Pedido</h1>
+        
+        <div class="carrito-layout">
+            
+            <section class="carrito-productos">
+                <h2>Productos</h2>
+                <div class="cart-list" id="cart-list">
+                    <p class="empty-cart-message">Tu carrito está vacío. <a href="menu.html">Ver menú</a></p>
+                </div>
+
+                <div class="cart-summary">
+                    <div class="summary-line">
+                        <span>Subtotal:</span>
+                        <span id="subtotal-display">$0,00</span>
+                    </div>
+                    <div class="summary-line total-line">
+                        <span>TOTAL A PAGAR:</span>
+                        <span id="total-display">$0,00</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="checkout-form">
+                <h2>Datos y Pago</h2>
+                <form id="checkout-form">
+                    
+                    <fieldset>
+                        <legend>Datos de Contacto</legend>
+                        <div class="form-group">
+                            <label for="nombre">Nombre y Apellido *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono (WhatsApp) *</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Retiro del Pedido</legend>
+                        <div class="form-group">
+                            <label for="retiro">Tipo de Retiro</label>
+                            <select id="retiro" name="retiro">
+                                <option value="local">Retiro en Local (Gratis)</option>
+                                <option value="envio">Envío a Domicilio (Costo adicional)</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="direccion-group" style="display:none;">
+                            <label for="direccion">Dirección de Envío *</label>
+                            <input type="text" id="direccion" name="direccion">
+                        </div>
+                        <div class="form-group">
+                            <label for="notas">Notas / Horario Preferido</label>
+                            <textarea id="notas" name="notas"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" id="pay-button" class="btn-checkout">PAGAR AHORA</button>
+
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+{
+    "products": [
+        {
+            "id": "PAN_FRANCES_KG",
+            "category": "Panadería",
+            "name": "Pan Francés / Flautitas (x Kg)",
+            "price": 1500.00,
+            "description": "Clásico pan del día, crujiente por fuera y suave por dentro.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Pan+Frances"
+        },
+        {
+            "id": "PAN_MIGNON_KG",
+            "category": "Panadería",
+            "name": "Pan Migñón (x Kg)",
+            "price": 1700.00,
+            "description": "Pan ideal para sándwiches de miga o tostadas.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Pan+Mignon"
+        },
+        {
+            "id": "PAN_DE_MOLDE_INTEGRAL",
+            "category": "Panadería",
+            "name": "Pan de Molde Integral (500g)",
+            "price": 2500.00,
+            "description": "Hecho con harina 100% integral. Ideal para una dieta saludable.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Pan+Integral"
+        },
+        {
+            "id": "PAN_DE_CAMPO",
+            "category": "Panadería",
+            "name": "Pan de Campo Artesanal (Und)",
+            "price": 3200.00,
+            "description": "Elaborado con masa madre y cocido en horno de piedra.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Pan+Campo"
+        },
+        {
+            "id": "PAN_HAMBURGUESA_X4",
+            "category": "Panadería",
+            "name": "Pan de Hamburguesa (Pack x 4)",
+            "price": 1800.00,
+            "description": "Pan suave con sésamo, ideal para hamburguesas caseras.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Pan+Hamburguesa"
+        },
+        {
+            "id": "PAN_PANCHOS_X6",
+            "category": "Panadería",
+            "name": "Pan de Pancho (Pack x 6)",
+            "price": 1600.00,
+            "description": "Pan alargado y esponjoso para hot dogs.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Pan+Pancho"
+        },
+        {
+            "id": "GRISINES_X100G",
+            "category": "Panadería",
+            "name": "Grisines Clásicos (100g)",
+            "price": 900.00,
+            "description": "Finos y crujientes, perfectos para acompañar.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Grisines"
+        },
+        {
+            "id": "CHIPAS_X250G",
+            "category": "Panadería",
+            "name": "Chipás Recién Hechos (250g)",
+            "price": 4500.00,
+            "description": "Bolitas de queso de almidón de mandioca, recién horneadas.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Chipas"
+        },
+        {
+            "id": "MEDIALUNA_MANTECA_UND",
+            "category": "Facturas",
+            "name": "Medialuna de Manteca (Und)",
+            "price": 550.00,
+            "description": "Medialuna dulce y hojaldrada, con brillo de almíbar.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Medialuna+Manteca"
+        },
+        {
+            "id": "MEDIALUNA_GRASA_UND",
+            "category": "Facturas",
+            "name": "Medialuna de Grasa (Und)",
+            "price": 480.00,
+            "description": "Opción más seca y salada, clásica de la panadería.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Medialuna+Grasa"
+        },
+        {
+            "id": "FACTURA_CREMA_UND",
+            "category": "Facturas",
+            "name": "Factura de Crema Pastelera (Und)",
+            "price": 650.00,
+            "description": "Rellena con abundante crema pastelera casera.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Factura+Crema"
+        },
+        {
+            "id": "FACTURA_MEMBRILLO_UND",
+            "category": "Facturas",
+            "name": "Factura de Membrillo (Und)",
+            "price": 600.00,
+            "description": "Rellena con dulce de membrillo, cubierta con almíbar.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Factura+Membrillo"
+        },
+        {
+            "id": "FACTURA_DOCE_MIX",
+            "category": "Facturas",
+            "name": "Docena de Facturas Surtidas",
+            "price": 6500.00,
+            "description": "Selección de medialunas, vigilantes y sacramentos.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Facturas+Mix"
+        },
+        {
+            "id": "LEMON_PIE_ENTERO",
+            "category": "Pastelería",
+            "name": "Lemon Pie (Torta Entera)",
+            "price": 12500.00,
+            "description": "Base crocante, relleno de limón ácido y merengue italiano.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Lemon+Pie"
+        },
+        {
+            "id": "TARTA_FRUTILLA_ENTERA",
+            "category": "Pastelería",
+            "name": "Tarta de Frutillas con Crema",
+            "price": 15800.00,
+            "description": "Base de masa sableé, crema pastelera y frutillas frescas.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Tarta+Frutilla"
+        },
+        {
+            "id": "PASTA_FROLA_BATATA",
+            "category": "Pastelería",
+            "name": "Pasta Frola de Batata (Entera)",
+            "price": 8900.00,
+            "description": "Clásica tarta con base de masa manteca y dulce de batata.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Pasta+Frola"
+        },
+        {
+            "id": "TORTA_CHOCOLINAS",
+            "category": "Pastelería",
+            "name": "Chocotorta (Torta Mediana)",
+            "price": 14500.00,
+            "description": "La torta de galletas de chocolate con dulce de leche y queso crema.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Chocotorta"
+        },
+        {
+            "id": "SELVA_NEGRA_KG",
+            "category": "Pastelería",
+            "name": "Torta Selva Negra (por Kg)",
+            "price": 19500.00,
+            "description": "Bizcocho de chocolate, crema batida, cerezas y licor.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Selva+Negra"
+        },
+        {
+            "id": "TIRAMISU_IND",
+            "category": "Pastelería",
+            "name": "Tiramisú (Porción Individual)",
+            "price": 3500.00,
+            "description": "Postre italiano con mascarpone, café y cacao.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Tiramisu"
+        },
+        {
+            "id": "MASAS_FINAS_X250G",
+            "category": "Masas",
+            "name": "Masas Finas Surtidas (250g)",
+            "price": 6800.00,
+            "description": "Selección de bocados de pastelería delicada.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Masas+Finas"
+        },
+        {
+            "id": "MASAS_SECAS_X250G",
+            "category": "Masas",
+            "name": "Masas Secas (250g)",
+            "price": 5500.00,
+            "description": "Galletas secas ideales para acompañar el té o café.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Masas+Secas"
+        },
+        {
+            "id": "BUDIN_NARANJA",
+            "category": "Masas",
+            "name": "Budín de Naranja y Glaseado",
+            "price": 3900.00,
+            "description": "Budín húmedo con glaseado de limón o naranja.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Budin+Naranja"
+        },
+        {
+            "id": "CUADRADO_BROWNIE",
+            "category": "Masas",
+            "name": "Cuadrado de Brownie (Und)",
+            "price": 1800.00,
+            "description": "Porción individual de brownie intenso con nueces.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Brownie"
+        },
+        {
+            "id": "ALFAJOR_MAICENA_UNIDAD",
+            "category": "Masas",
+            "name": "Alfajor de Maicena Gigante",
+            "price": 750.00,
+            "description": "Relleno con dulce de leche y cubierto con coco rallado.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Alfajor+Maicena"
+        },
+        {
+            "id": "SANDWICH_MIGA_J_Q_X6",
+            "category": "Salados",
+            "name": "Sándwich de Miga JyQ (Pack x 6)",
+            "price": 4900.00,
+            "description": "Clásicos sándwiches triples de jamón y queso.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Sandwich+Miga"
+        },
+        {
+            "id": "EMPANA_JYQ_UND",
+            "category": "Salados",
+            "name": "Empanada de Jamón y Queso (Und)",
+            "price": 800.00,
+            "description": "Relleno cremoso de jamón cocido y quesos seleccionados.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Empanada"
+        },
+        {
+            "id": "TARTA_IND_VERDURA",
+            "category": "Salados",
+            "name": "Tarta Individual de Verdura",
+            "price": 3800.00,
+            "description": "Base de masa casera con relleno de acelga, espinaca y queso.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Tarta+Verdura"
+        },
+        {
+            "id": "FOSFORITO_JYQ_UND",
+            "category": "Salados",
+            "name": "Fosforito de Jamón y Queso (Und)",
+            "price": 1100.00,
+            "description": "Hojaldre relleno de jamón y queso, cubierto con azúcar glas.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Fosforito"
+        },
+        {
+            "id": "JUGO_NARANJA_LITRO",
+            "category": "Bebidas",
+            "name": "Jugo de Naranja Natural (Litro)",
+            "price": 3100.00,
+            "description": "Jugo recién exprimido, 100% natural.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Jugo+Naranja"
+        },
+        {
+            "id": "AGUA_MINERAL_LITRO",
+            "category": "Bebidas",
+            "name": "Agua Mineral (1.5 Litros)",
+            "price": 900.00,
+            "description": "Agua embotellada de baja sodio.",
+            "imageUrl": "https://via.placeholder.com/400x180?text=Agua+Mineral"
+        }
+    ]
+}

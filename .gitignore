@@ -1,0 +1,15 @@
+# Archivo .gitignore
+# ------------------------------------
+# Dependencias de Node (Frontend y Backend)
+/frontend/node_modules
+/backend/node_modules
+
+# Archivos de credenciales y configuración
+/backend/.env
+/backend/service-account-key.json 
+
+# Archivos de build y temporales
+/frontend/build
+/frontend/dist
+*.log
+npm-debug.log*

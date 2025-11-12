@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Panadería Don Fermín</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="top-bar-left">
+            <a href="index.html" class="logo-link">DF</a> <span class="location-text">📍 UBICACIÓN: [LOCALIDAD]</span>
+            <span class="social-text">📸 RED SOCIAL: [@INSTAGRAM]</span>
+        </div>
+        <nav class="top-bar-right">
+            <a href="index.html" class="nav-icon home-icon" title="Inicio">🏠</a>
+            <a href="carrito.html" class="nav-icon cart-icon" title="Ver Carrito">🛒</a>
+            <a href="#" class="nav-icon user-icon" title="Mi Cuenta">👤</a>
+        </nav>
+    </header>
+
+    <div class="promo-banner">
+        <h2>✨ ¡OFERTA DEL DÍA! Docena de facturas surtidas a $6.500 ✨</h2>
+    </div>
+
+    <main class="menu-container">
+        <h1>Nuestro Menú de Panadería y Repostería</h1>
+        
+        <div class="category-filters">
+            <button class="filter-btn active" data-category="all">Todo</button>
+            <button class="filter-btn" data-category="Panadería">Panadería</button>
+            <button class="filter-btn" data-category="Facturas">Facturas</button>
+            <button class="filter-btn" data-category="Pastelería">Pastelería</button>
+            <button class="filter-btn" data-category="Salados">Salados</button>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+            </div>
+    </main>
+
+    <script src="menu.js"></script>
+    </body>
+</html>
