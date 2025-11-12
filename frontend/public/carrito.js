@@ -31,7 +31,7 @@ function saveCart(cart) {
 }
 
 /**
- * Formatea un número como moneda argentina (ARS). (Duplicada para asegurar la función)
+ * Formatea un número como moneda argentina (ARS). 
  */
 function formatPrice(price) {
     if (typeof price !== 'number') return 'Precio no disponible';
@@ -42,11 +42,7 @@ function formatPrice(price) {
 // LÓGICA DE ACTUALIZACIÓN Y RENDERIZADO
 // ===========================================
 
-/**
- * Calcula el subtotal y el total del carrito.
- * @param {Array} cart - El carrito actual.
- * @returns {{subtotal: number, total: number}} Los montos calculados.
- */
+
 function calculateTotals(cart) {
     const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
     // Nota: Aquí se podría añadir la lógica de costo de envío si 'retiro' es 'envio'
@@ -59,9 +55,8 @@ function calculateTotals(cart) {
     return { subtotal, total };
 }
 
-/**
- * Actualiza el contador del carrito en el header (función tomada de menu.js).
- */
+
+
 function updateCartCount() {
     const cart = getCart();
     const countElement = document.getElementById('cart-count');
@@ -250,7 +245,7 @@ checkoutForm.addEventListener('submit', async function(e) {
 });
 
 // ===========================================
-// INICIALIZACIÓN
+// INICIALACIÓN
 // ===========================================
 
 document.addEventListener('DOMContentLoaded', renderCart);
