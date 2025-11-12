@@ -6,7 +6,7 @@ body, html {
     height: 100%;
     /* Opcional: Establecer una fuente */
     font-family: Arial, sans-serif; 
-    overflow: hidden; /* Evita barras de desplazamiento */
+    overflow: ; /* Evita barras de desplazamiento */
 }
 
 /* ----------------------------------- */
