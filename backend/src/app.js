@@ -1,22 +1,21 @@
-// src/app.js
 const express = require('express');
 const cors = require('cors');
-const nodemailer = require('nodemailer'); // <--- NECESARIO para email
+const nodemailer = require('nodemailer'); //  NECESARIO para email
 require('dotenv').config(); 
 
-// Importa las utilidades de Sheets.js (La ruta es correcta si sheets.js está en src/utils)
+// Importa las utilidades de Sheets.js 
 const { conectarGoogleSheets, cargarCatalogo, registrarPedido } = require('./utils/sheets'); 
 
 const app = express(); 
 const PORT = process.env.PORT || 3000;
 const DON_FERMIN_EMAIL = process.env.DON_FERMIN_EMAIL;
 
-// Configuración del transportador de email (Nodemailer)
+// Configuración del transportador de email (Node)
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: DON_FERMIN_EMAIL,
-        pass: process.env.EMAIL_PASS, // La contraseña de 16 caracteres
+        pass: process.env.EMAIL_PASS, 
     },
 });
 
@@ -26,12 +25,12 @@ app.use(express.json());
 app.use(cors());
 
 // =================================================================
-// 1. LÓGICA DE EMAIL (FUNCIÓN DE NOTIFICACIÓN)
+// 1. LÓGICA DE EMAIL 
 // =================================================================
 
-/**
- * Función para enviar el correo de notificación
- */
+
+  //Función para enviar el correo de notificación
+
 async function enviarNotificacion(pedido) {
     const mailOptions = {
         from: DON_FERMIN_EMAIL,
@@ -60,7 +59,7 @@ async function enviarNotificacion(pedido) {
 
 
 // =================================================================
-// 2. LÓGICA DE NEGOCIO (FINALIZAR PEDIDO)
+// 2. LÓGICA DE NEGOCIO 
 // =================================================================
 
 async function finalizarPedido(pedido) {
@@ -83,7 +82,7 @@ async function finalizarPedido(pedido) {
 }
 
 // =================================================================
-// 3. LÓGICA DE NEGOCIO (PROCESAR PAGO)
+// 3. LÓGICA DE NEGOCIO 
 // =================================================================
 
 async function procesarPago(pedidoCliente, tokenPago) {
@@ -109,7 +108,7 @@ async function procesarPago(pedidoCliente, tokenPago) {
         throw error;
     }
 
-    // Simulación de Pago (Pasarela)
+    // Simulación de Pago 
     const idTransaccion = `TXN_${Date.now()}`; 
 
     const pedidoCompleto = { 
@@ -126,7 +125,7 @@ async function procesarPago(pedidoCliente, tokenPago) {
 
 
 // =================================================================
-// 4. SISTEMA DE RUTAS (API)
+// 4. SISTEMA DE RUTAS 
 // =================================================================
 
 // Ruta de pago (POST /api/pago)
