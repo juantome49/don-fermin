@@ -1,5 +1,4 @@
-# Archivo .gitignore
-# ------------------------------------
+
 # Dependencias de Node (Frontend y Backend)
 /frontend/node_modules
 /backend/node_modules
